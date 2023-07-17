@@ -295,6 +295,18 @@ r1 := re([a[1],a[2]], 1500, 8) ;
 r2 := re([a[1], a[3]], 1500, 8) ;
 r3 := re([a[1], a[4]], 1500, 8) ;
 
+// We verify that  roots of the above equations are points on our scheme  //
+
+SK :=  SplittingField(m1) ;
+R := Roots(m1, SK) ;
+R :=  [ a[1] : a in R] ;
+r := [r1,r2,r3] cat [ re([a[1],a[i]],1500,8) : i in [5..16] ];
+PT := [ [a] cat [ Evaluate(s,a) : s in r ]  : a in R];
+EPT := [ [ Evaluate(e,a) : e in E ] : a in PT] ;
+NET := [  a  :  a in EPT  | a ne [ 0 : i in [1..16] ]  ];
+assert NET eq [] ;
+
+
 print  " One orbit  of 4-tangent planes of the form   -x[1] + a1*x[2] +a2*x[3] + a3*x[4] + a4x[5]" ;
 print "The minimal polynomial of a1  is:";
 m1;
