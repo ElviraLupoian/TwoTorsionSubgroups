@@ -21,3 +21,5 @@ The file X0NQuadritangents.txt - simply states the orbits of quadritangents used
 
 X0NPlanes.m - computes some orbits of quadritangents 
 J0NPlanes.m - uses the planes computed above to calculate the 2-torsion subgroup and it's rational subgroup
+
+There is also a file X055Test.m - this demonstrates the fact that our computations of the minimal polynomials is more efficient than the MAGMA command MinimalPolynomial().
