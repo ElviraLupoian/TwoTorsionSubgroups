@@ -1,0 +1,41 @@
+// These are the 28 bitangents the curve X0(75)/w25 //
+
+A model of the curve is in P^2 is 
+
+3x^3z - 3x^2y^2 + 5x^2z^2 -3xy^3 -19xy^2z -xyz^2 + 3xz^3+ 2y^4 + 7y^3z -7y^2z^2 -3yz^3
+
+All bitangents to the curve can be described by equations of the form 
+x - a[1]*y - a[2]*z 
+
+
+There are 4 bitangents defined over the rationals:
+x  + 3y +  z 
+x - y + z 
+x - 2y + z 
+x +  2y +  z 
+
+The remaining 24 bitangents are stated in their Galois orbits. We give a minimal polynomial f for a[1]  and an expression for a[2] interms of a root u of f 
+
+f1 := u^2 + u - 1 
+a[1] := u 
+a[2] := 3u + 2 
+
+f1 := u^2 - 7u + 11 
+a[1] := u  
+a[2] := -u + 2
+
+f1 := u^2 + 8u - 4 
+a[1] = u 
+a[2] = 2u -1 
+
+f1 := u^6 + 3u^5 - 5u^3 + 60u^2 + 63u - 41
+a[1] := u  
+a[2] := 1/27*(u^5 + u^4 - 2u^3 - u^2 + 62u  - 34) 
+
+f1 :=  11u^6 + 49u^5 + 20u^4 - 55u^3 + 40u^2 - 11u + 1 
+a[1] := u 
+a[2] := 1/17*(407u^5 + 1901u^4 + 1154u^3 - 1773u^2 + 1106u  - 188 )
+
+f1 := u^6 +  14u^5 - 5u^4 - 20u^3 + 95u^2 + 134u - 139 
+a[1] = u  
+a[2] = 1/9164*(41u^5 + 467u^4 - 1312u^3 + 2604u^2 + 2687u - 3083) 
