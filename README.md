@@ -15,11 +15,18 @@ J054TwoTorsionFOD.m - this computes a candidate for the field of definition of t
 J054TwoTorsion.m - this uses the field field of definition computed above to compute the 2-torsion subgroup and it's rational subgroup 
 The file X054Tritangents.txt is also included, this simply stated the complete list of 120 tritangent planes to the curve. These are not explicitly used in these computations, but were used in a previous version of the paper, and it's simply included here for completness.
 
-The files used for the genus 5 example J0(N), N =42, 55, 63, 72, 75 are as follows:
+The files used for the genus 5 example J0(N), N =42, 63, 72, 75 are as follows:
 general.m - this file is used by all other X0NPlane.m files. It contains the general programs for the Newton-Raphson and lattice reduction steps. 
 The file X0NQuadritangents.txt - simply states the orbits of quadritangents used in our computations 
 
 X0NPlanes.m - computes some orbits of quadritangents 
 J0NPlanes.m - uses the planes computed above to calculate the 2-torsion subgroup and it's rational subgroup
+
+The computation for J0(55) contains 5 files:
+
+X055Planes.m - computes some orbits of quadritangents 
+J055TwoTorsion.m - computes part of the 2-torsion subgroup, defined over a degree 12 number field (as described in the paper)
+J055TwoTorsionRational.m - computes the rational 2-torsion subgroup, as described in the paper
+X055Quadritangents.txt - simply states the quadriatangents used 
 
 There is also a file X055Test.m - this demonstrates the fact that our computations of the minimal polynomials is more efficient than the MAGMA command MinimalPolynomial().
