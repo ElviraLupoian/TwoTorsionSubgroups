@@ -1,4 +1,4 @@
-
+// this file verifies the Generalised Ogg Conjecture for X0(72)
 
 Zx<[x]> := PolynomialRing(Integers(), 5) ; 
 
